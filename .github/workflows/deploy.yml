@@ -35,5 +35,5 @@ jobs:
             docker pull ${{ secrets.DOCKER_USER }}/github-actions-demo:latest
             docker stop myapp || true
             docker rm myapp || true
-            docker run -d --name myapp -p 8081:3000 ${{ secrets.DOCKER_USER }}/github-actions-demo:latest
+            docker run -d --name myapp -p 8082:3000 ${{ secrets.DOCKER_USER }}/github-actions-demo:latest
 St
